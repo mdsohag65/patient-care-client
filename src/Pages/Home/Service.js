@@ -3,12 +3,12 @@ import React from 'react';
 const Service = ({ service }) => {
     return (
         <div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img className='w-28 h-28' src={service.img} alt="Shoes" class="rounded-xl" />
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure className="px-10 pt-10">
+                    <img className='w-28 h-28 rounded-xl' src={service.img} alt="Shoes" />
                 </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">{service.name}</h2>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title">{service.name}</h2>
                     <p>{service.description}</p>
                 </div>
             </div>
