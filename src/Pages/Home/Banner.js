@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import chair from '../../assets/images/chair.png';
 import bg from '../../assets/images/bg.png';
+import CommonBtn from '../Shared/CommonBtn';
 
 const Banner = () => {
     return (
@@ -15,7 +16,7 @@ const Banner = () => {
                     <div className='m-6'>
                         <h1 class="text-5xl font-bold">Your New Smile Starts <br /> Here!</h1>
                         <p class="py-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br /> Ipsum has been the industry's standard dummy text ever since the.</p>
-                        <Link to="/appointment"><button class="btn btn-primary">Get Started</button></Link>
+                        <Link to="/appointment"><CommonBtn>GET STARTED</CommonBtn></Link>
                     </div>
                 </div>
             </div>
