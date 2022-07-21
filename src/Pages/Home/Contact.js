@@ -19,7 +19,7 @@ const Contact = () => {
                     <input className='w-[450px] h-[48px] rounded-lg p-4' type="subject" name="subject" id="" placeholder='Subject' />
                     <br />
                     <br />
-                    <input className='w-[450px] h-[136px] rounded-lg p-4 mb-4' type="message" name="message" id="" placeholder='Your Message' />
+                    <textarea className='w-[450px] rounded-lg p-4 mb-4' type="message" name="message" id="" placeholder='Your Message' />
                     <br />
                     <CommonBtn>Submit</CommonBtn>
                 </form>
