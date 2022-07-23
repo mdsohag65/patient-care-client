@@ -1,23 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import chair from '../../assets/images/chair.png';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import { format } from 'date-fns';
+import bg from '../../assets/images/bg.png';
 
-const AppointBanner = () => {
-    const [date, setDate] = useState(new Date());
+const AppointBanner = ({ date, setDate }) => {
+
     return (
-        <section>
-            <div class="hero min-h-screen bg-base-200">
+        <section style={{
+            background: `url(${bg})`,
+            backgroundSize: 'cover'
+        }}>
+            <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt='' />
-                    <div>
+                    <img src={chair} class="max-w-sm rounded-lg shadow-2xl m-5" alt='' />
+                    <div className='m-5'>
                         <DayPicker
                             mode='single'
                             selected={date}
                             onSelect={setDate}
                         />
-                        <p>You have selected: <span className='text-primary'>{format(date, 'PP')}</span></p>
                     </div>
                 </div>
             </div>
