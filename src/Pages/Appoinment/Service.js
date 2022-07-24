@@ -1,7 +1,6 @@
 import React from 'react';
-import CommonBtn from '../Shared/CommonBtn';
 
-const Service = ({ service }) => {
+const Service = ({ service, setTreatment }) => {
     const { name, slots } = service;
     return (
         <section>
@@ -17,7 +16,10 @@ const Service = ({ service }) => {
                     </p>
                     <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
                     <div class="card-actions justify-center">
-                        <CommonBtn>Book Appointment</CommonBtn>
+                        <label
+                            onClick={() => setTreatment(service)}
+                            disabled={slots.length === 0}
+                            for="booking-modal" class="btn btn-secondary text-white">BOOK APPOINTMENT</label>
                     </div>
                 </div>
             </div>
