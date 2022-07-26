@@ -34,8 +34,8 @@ const MyAppointment = () => {
     return (
         <div>
             <h2 className='text-secondary font-semibold'>My Appointments: {appointments.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
 
                     <thead>
                         <tr>
