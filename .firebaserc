@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "patients-care-9d2bb"
-  }
+    "default": "patients-care-9d2bb",
+    "development": "patients-care-9d2bb",
+    "staging": "patients-care-9d2bb"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -59,7 +59,10 @@ const MyAppointment = () => {
                                 <td>{a.treatment}</td>
                                 <td>
                                     {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}><button className='btn btn-sm btn-outline btn-success'>Pay</button></Link>}
-                                    {(a.price && a.paid) && <span className='text-success'>PAID</span>}
+                                    {(a.price && a.paid) && <div>
+                                        <p><span className='text-success'>PAID</span></p>
+                                        <p>TransactionId: {a.transactionId}</p>
+                                    </div>}
                                 </td>
                             </tr>)
                         }

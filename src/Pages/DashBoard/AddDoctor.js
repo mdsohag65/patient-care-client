@@ -7,7 +7,7 @@ const AddDoctor = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://limitless-mountain-82756.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
@@ -33,7 +33,7 @@ const AddDoctor = () => {
                         specialty: data.specialty,
                         img: img
                     }
-                    fetch('http://localhost:5000/doctor', {
+                    fetch('https://limitless-mountain-82756.herokuapp.com/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

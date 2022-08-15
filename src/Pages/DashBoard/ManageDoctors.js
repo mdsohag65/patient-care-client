@@ -6,7 +6,7 @@ const ManageDoctors = () => {
     const [deleteDoctor, setDeleteDoctor] = useState(null);
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/doctor', {
+        fetch('https://limitless-mountain-82756.herokuapp.com/doctor', {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }
